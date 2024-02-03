@@ -24,7 +24,7 @@ Testinizi calistirin.
 
 1. ec2 kurulduktan sonra aktif hale getirilir:
    
-	öcve terminalden ec2 açlılır, sonra
+	önce terminalden ec2 açlılır, sonra
 
 	sudo yum update -y
 
