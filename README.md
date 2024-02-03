@@ -87,7 +87,7 @@ Testinizi calistirin.
 
 9. şimdi progmamımızı remote a push etmeye geldi sıra:
     
-	git config --global user.name <name>
+	git config --global user.name name
  
 	git config --global user.name
 
