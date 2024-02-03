@@ -19,8 +19,11 @@ Programlarini kurup projeniz push edin
 
 Testinizi calistirin.
 
+###########################################################################################################################################################
+###########################################################################################################################################################
 
-1. ec2 kurulduktan sonra aktif hale getirilir
+1. ec2 kurulduktan sonra aktif hale getirilir:
+   
 	öcve terminalden ec2 açlılır, sonra
 	sudo yum update -y
 	sudo yum install httpd -y
@@ -30,7 +33,8 @@ Testinizi calistirin.
 	sudo systemctl status httpd
 	deriz ve active (running) olduğunu görürüz.
 
-2. java kurulumu
+2. java kurulumu:
+   
 	sudo yum install java ya da (sudo yum install java-21-amazon-corretto-headless)
 	sudo yum install java-21-amazon-corretto
 	sudo yum install java-21-amazon-corretto-devel
@@ -39,7 +43,8 @@ Testinizi calistirin.
 	java -version
 	deriz, java mızın yüklendiğini ve sürümünü görürüz.
 
-3. maven krulumu
+3. maven krulumu:
+   
 	sudo wget https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
 	sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
 	sudo yum install -y apache-maven
@@ -47,13 +52,15 @@ Testinizi calistirin.
 	sırasıyla dedikten sonra kontrol için
 	mvn -version
 	deriz, maven ın yüklendiğini ve sürümünü görürüz.
-4. git kurulumu
+4. git kurulumu:
+   
 	sudo yum install git
 	dedikten sonra kontrol için
 	git version
 	deriz, git in yüklendiğini ve sürümünü görürüz.
 
-5. şimdi progmamımızı remote a push etmeye geldi sıra 
+5. şimdi progmamımızı remote a push etmeye geldi sıra:
+    
 	git config --global user.name <name>
 	git config --global user.name
 	git config --global user.email <email@gmail.com>
@@ -64,10 +71,12 @@ Testinizi calistirin.
 	git commit -m "command"
 	git push <github daki url>
 
-6. şimdi github dan ec2 ya projemizi çekeceğiz
+6. şimdi github dan ec2 ya projemizi çekeceğiz:
+
 	git pull <github daki url>
 
-7. şimdi mvn çalıştırma zamanı
+7. şimdi mvn çalıştırma zamanı:
+    
 	mvn clean
 	mvn compile
 	mvn test
