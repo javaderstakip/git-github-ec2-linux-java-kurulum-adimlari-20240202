@@ -1,14 +1,24 @@
 # git-github-ec2-linux-java-kurulum-adimlari-20240202
 
+
 1- bir test projeniz olsun, tek feature bile olur ama cucumber
+
 2-projenizin son halini github a push edin
+
 3-AWS ile test icin olusturdugunuz VM e
+
 Java 17 ya da 21
+
 Mvn
+
 git
+
 Programlarini kurup projeniz push edin
+
 4-sonra mvn compile ile derleyip
+
 Testinizi calistirin.
+
 
 1. ec2 kurulduktan sonra aktif hale getirilir
 	öcve terminalden ec2 açlılır, sonra
