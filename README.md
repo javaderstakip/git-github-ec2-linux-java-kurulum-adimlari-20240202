@@ -97,18 +97,18 @@ Testinizi calistirin.
 
 	git init
 
-	git clone <github daki url>
+	git clone url
  
 	git add .
 
 	git commit -m "command"
 
-	git push <github daki url>
+	git push url
  
 
 11. şimdi github dan ec2 ya projemizi çekeceğiz:
 
-	git pull <github daki url>
+	git pull url
  
 
 12. şimdi mvn çalıştırma zamanı:
