@@ -25,15 +25,23 @@ Testinizi calistirin.
 1. ec2 kurulduktan sonra aktif hale getirilir:
    
 	öcve terminalden ec2 açlılır, sonra
+
 	sudo yum update -y
+
 	sudo yum install httpd -y
+
 	sudo systemctl status httpd
+
 	sudo systemctl start httpd
+
 	deriz, kurulum yapıldıktan sonra kontrol icin tekrar
+
 	sudo systemctl status httpd
+
 	deriz ve active (running) olduğunu görürüz.
 
-2. java kurulumu:
+
+3. java kurulumu:
    
 	sudo yum install java ya da (sudo yum install java-21-amazon-corretto-headless)
 	sudo yum install java-21-amazon-corretto
@@ -43,7 +51,7 @@ Testinizi calistirin.
 	java -version
 	deriz, java mızın yüklendiğini ve sürümünü görürüz.
 
-3. maven krulumu:
+4. maven krulumu:
    
 	sudo wget https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
 	sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
@@ -52,14 +60,14 @@ Testinizi calistirin.
 	sırasıyla dedikten sonra kontrol için
 	mvn -version
 	deriz, maven ın yüklendiğini ve sürümünü görürüz.
-4. git kurulumu:
+5. git kurulumu:
    
 	sudo yum install git
 	dedikten sonra kontrol için
 	git version
 	deriz, git in yüklendiğini ve sürümünü görürüz.
 
-5. şimdi progmamımızı remote a push etmeye geldi sıra:
+6. şimdi progmamımızı remote a push etmeye geldi sıra:
     
 	git config --global user.name <name>
 	git config --global user.name
@@ -71,11 +79,11 @@ Testinizi calistirin.
 	git commit -m "command"
 	git push <github daki url>
 
-6. şimdi github dan ec2 ya projemizi çekeceğiz:
+7. şimdi github dan ec2 ya projemizi çekeceğiz:
 
 	git pull <github daki url>
 
-7. şimdi mvn çalıştırma zamanı:
+8. şimdi mvn çalıştırma zamanı:
     
 	mvn clean
 	mvn compile
